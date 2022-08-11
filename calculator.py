@@ -15,14 +15,49 @@ from arithmetic import (add, subtract, multiply, divide, square, cube,
 
 #             (...etc.)
 
-equation_input = input("Enter your equation>")
-tokens = equation_input.split(' ')
 
 while True:
+
+    equation_input = input("Enter your equation>")
+    tokens = equation_input.split(' ')
+
+
     if tokens[0] == 'q':
         print("You've exited.")
         break
+    elif tokens[0] == '+':
+        num1 = float(tokens[1])
+        num2 = float(tokens[2])
+        print(add(num1,num2))
+    elif tokens[0] == '-':
+        num1 = float(tokens[1])
+        num2 = float(tokens[2])
+        print(subtract(num1,num2))
+    elif tokens[0] == '*':
+        num1 = float(tokens[1])
+        num2 = float(tokens[2])
+        print(multiply(num1,num2))
+    elif tokens[0] == '/':
+        num1 = float(tokens[1])
+        num2 = float(tokens[2])
+        print(divide(num1,num2))
+    elif tokens[0] == 'square':
+        num1 = float(tokens[1])
+        print(square(num1))
+    elif tokens[0] == 'cube':
+        num1 = float(tokens[1])
+        print(cube(num1))
+    elif tokens[0] == 'pow':
+        num1 = float(tokens[1])
+        num2 = float(tokens[2])
+        print(power(num1,num2))
+    elif tokens[0] == 'mod':
+        num1 = float(tokens[1])
+        num2 = float(tokens[2])
+        print(mod(num1,num2))
     else:
-        if tokens[0] == 'pow':
-          power(tokens[1],tokens[2])
+        print('Please enter equation in correct format.')
+
+
+
 
