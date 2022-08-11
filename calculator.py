@@ -21,6 +21,26 @@ while True:
     equation_input = input("Enter your equation>")
     tokens = equation_input.split(' ')
 
+    # if "q" in tokens:
+    #     print("You will exit.")
+    #     break
+
+    # elif len(tokens) < 2:
+    #     print("Not enough inputs.")
+    #     continue
+
+    # operator = tokens[0]
+    # num1 = tokens[1]
+
+    # if len(tokens) < 3:
+    #     num2 = "0"
+
+    # else:
+    #     num2 = tokens[2]
+
+    # if len(tokens) > 3:
+    #     num3 = tokens[3]
+
 
     if tokens[0] == 'q':
         print("You've exited.")
